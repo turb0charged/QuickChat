@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        messageTextField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -36,11 +37,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //register to observe keyboard
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        //dismiss keyboard observers
         NotificationCenter.default.removeObserver(self)
     }
 
@@ -50,6 +51,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func keyboardWillShow(notification: NSNotification) {
+        //move view along with keyboard
+        //TODO animate and scroll to bottom of collection view when this occurs
         if let userInfo = notification.userInfo {
             if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
                 bottomConstraint.constant = keyboardSize.height
@@ -59,10 +62,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func keyboardWillHide(notification: NSNotification) {
+        //TODO animate and leave collection view as is
         bottomConstraint.constant = 0.0
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     //MARK: - Actions
+    @IBAction func messageTextFieldReturnTouched(_ sender: Any, forEvent event: UIEvent) {
+        
+    }
     @IBAction func siriMicButtonTouched(_ sender: Any) {
         let alert = UIAlertController(title: "Coming Soon", message: "Feature Coming Soon!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
