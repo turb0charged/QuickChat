@@ -14,6 +14,7 @@
 		F47FCADC1F3CAC9E00D3D84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47FCADA1F3CAC9E00D3D84C /* LaunchScreen.storyboard */; };
 		F47FCAE71F3CAC9E00D3D84C /* QuickChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAE61F3CAC9E00D3D84C /* QuickChatTests.swift */; };
 		F47FCAF21F3CAC9E00D3D84C /* QuickChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAF11F3CAC9E00D3D84C /* QuickChatUITests.swift */; };
+		F47FCB001F3CCCE500D3D84C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F47FCAED1F3CAC9E00D3D84C /* QuickChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47FCAF11F3CAC9E00D3D84C /* QuickChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickChatUITests.swift; sourceTree = "<group>"; };
 		F47FCAF31F3CAC9E00D3D84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F47FCAD81F3CAC9E00D3D84C /* Assets.xcassets */,
 				F47FCADA1F3CAC9E00D3D84C /* LaunchScreen.storyboard */,
 				F47FCADD1F3CAC9E00D3D84C /* Info.plist */,
+				F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */,
 			);
 			path = QuickChat;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				F47FCAD41F3CAC9E00D3D84C /* ViewController.swift in Sources */,
 				F47FCAD21F3CAC9E00D3D84C /* AppDelegate.swift in Sources */,
+				F47FCB001F3CCCE500D3D84C /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
