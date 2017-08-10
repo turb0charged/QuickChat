@@ -15,6 +15,7 @@
 		F47FCAE71F3CAC9E00D3D84C /* QuickChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAE61F3CAC9E00D3D84C /* QuickChatTests.swift */; };
 		F47FCAF21F3CAC9E00D3D84C /* QuickChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAF11F3CAC9E00D3D84C /* QuickChatUITests.swift */; };
 		F47FCB001F3CCCE500D3D84C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */; };
+		F47FCB031F3CE20300D3D84C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCB021F3CE20300D3D84C /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F47FCAF11F3CAC9E00D3D84C /* QuickChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickChatUITests.swift; sourceTree = "<group>"; };
 		F47FCAF31F3CAC9E00D3D84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		F47FCB021F3CE20300D3D84C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */,
+				F47FCB021F3CE20300D3D84C /* UIViewControllerExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47FCB031F3CE20300D3D84C /* UIViewControllerExtension.swift in Sources */,
 				F47FCAD41F3CAC9E00D3D84C /* ViewController.swift in Sources */,
 				F47FCAD21F3CAC9E00D3D84C /* AppDelegate.swift in Sources */,
 				F47FCB001F3CCCE500D3D84C /* UIImageExtension.swift in Sources */,
@@ -519,6 +523,7 @@
 				F47FCAF81F3CAC9E00D3D84C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F47FCAF91F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChatTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				F47FCAFB1F3CAC9E00D3D84C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F47FCAFC1F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				F47FCAFE1F3CAC9E00D3D84C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
