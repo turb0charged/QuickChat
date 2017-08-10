@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F47FCAD21F3CAC9E00D3D84C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAD11F3CAC9E00D3D84C /* AppDelegate.swift */; };
+		F47FCAD41F3CAC9E00D3D84C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAD31F3CAC9E00D3D84C /* ViewController.swift */; };
+		F47FCAD71F3CAC9E00D3D84C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47FCAD51F3CAC9E00D3D84C /* Main.storyboard */; };
+		F47FCAD91F3CAC9E00D3D84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47FCAD81F3CAC9E00D3D84C /* Assets.xcassets */; };
+		F47FCADC1F3CAC9E00D3D84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47FCADA1F3CAC9E00D3D84C /* LaunchScreen.storyboard */; };
+		F47FCAE71F3CAC9E00D3D84C /* QuickChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAE61F3CAC9E00D3D84C /* QuickChatTests.swift */; };
+		F47FCAF21F3CAC9E00D3D84C /* QuickChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FCAF11F3CAC9E00D3D84C /* QuickChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F47FCAE31F3CAC9E00D3D84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F47FCAC61F3CAC9E00D3D84C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47FCACD1F3CAC9E00D3D84C;
+			remoteInfo = QuickChat;
+		};
+		F47FCAEE1F3CAC9E00D3D84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F47FCAC61F3CAC9E00D3D84C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47FCACD1F3CAC9E00D3D84C;
+			remoteInfo = QuickChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F47FCACE1F3CAC9E00D3D84C /* QuickChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47FCAD11F3CAC9E00D3D84C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F47FCAD31F3CAC9E00D3D84C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F47FCAD61F3CAC9E00D3D84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F47FCAD81F3CAC9E00D3D84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47FCADB1F3CAC9E00D3D84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F47FCADD1F3CAC9E00D3D84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47FCAE21F3CAC9E00D3D84C /* QuickChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47FCAE61F3CAC9E00D3D84C /* QuickChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickChatTests.swift; sourceTree = "<group>"; };
+		F47FCAE81F3CAC9E00D3D84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47FCAED1F3CAC9E00D3D84C /* QuickChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47FCAF11F3CAC9E00D3D84C /* QuickChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickChatUITests.swift; sourceTree = "<group>"; };
+		F47FCAF31F3CAC9E00D3D84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F47FCACB1F3CAC9E00D3D84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47FCADF1F3CAC9E00D3D84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47FCAEA1F3CAC9E00D3D84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F47FCAC51F3CAC9E00D3D84C = {
+			isa = PBXGroup;
+			children = (
+				F47FCAD01F3CAC9E00D3D84C /* QuickChat */,
+				F47FCAE51F3CAC9E00D3D84C /* QuickChatTests */,
+				F47FCAF01F3CAC9E00D3D84C /* QuickChatUITests */,
+				F47FCACF1F3CAC9E00D3D84C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F47FCACF1F3CAC9E00D3D84C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47FCACE1F3CAC9E00D3D84C /* QuickChat.app */,
+				F47FCAE21F3CAC9E00D3D84C /* QuickChatTests.xctest */,
+				F47FCAED1F3CAC9E00D3D84C /* QuickChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47FCAD01F3CAC9E00D3D84C /* QuickChat */ = {
+			isa = PBXGroup;
+			children = (
+				F47FCAD11F3CAC9E00D3D84C /* AppDelegate.swift */,
+				F47FCAD31F3CAC9E00D3D84C /* ViewController.swift */,
+				F47FCAD51F3CAC9E00D3D84C /* Main.storyboard */,
+				F47FCAD81F3CAC9E00D3D84C /* Assets.xcassets */,
+				F47FCADA1F3CAC9E00D3D84C /* LaunchScreen.storyboard */,
+				F47FCADD1F3CAC9E00D3D84C /* Info.plist */,
+			);
+			path = QuickChat;
+			sourceTree = "<group>";
+		};
+		F47FCAE51F3CAC9E00D3D84C /* QuickChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				F47FCAE61F3CAC9E00D3D84C /* QuickChatTests.swift */,
+				F47FCAE81F3CAC9E00D3D84C /* Info.plist */,
+			);
+			path = QuickChatTests;
+			sourceTree = "<group>";
+		};
+		F47FCAF01F3CAC9E00D3D84C /* QuickChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F47FCAF11F3CAC9E00D3D84C /* QuickChatUITests.swift */,
+				F47FCAF31F3CAC9E00D3D84C /* Info.plist */,
+			);
+			path = QuickChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F47FCACD1F3CAC9E00D3D84C /* QuickChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47FCAF61F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChat" */;
+			buildPhases = (
+				F47FCACA1F3CAC9E00D3D84C /* Sources */,
+				F47FCACB1F3CAC9E00D3D84C /* Frameworks */,
+				F47FCACC1F3CAC9E00D3D84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickChat;
+			productName = QuickChat;
+			productReference = F47FCACE1F3CAC9E00D3D84C /* QuickChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F47FCAE11F3CAC9E00D3D84C /* QuickChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47FCAF91F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChatTests" */;
+			buildPhases = (
+				F47FCADE1F3CAC9E00D3D84C /* Sources */,
+				F47FCADF1F3CAC9E00D3D84C /* Frameworks */,
+				F47FCAE01F3CAC9E00D3D84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47FCAE41F3CAC9E00D3D84C /* PBXTargetDependency */,
+			);
+			name = QuickChatTests;
+			productName = QuickChatTests;
+			productReference = F47FCAE21F3CAC9E00D3D84C /* QuickChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F47FCAEC1F3CAC9E00D3D84C /* QuickChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47FCAFC1F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChatUITests" */;
+			buildPhases = (
+				F47FCAE91F3CAC9E00D3D84C /* Sources */,
+				F47FCAEA1F3CAC9E00D3D84C /* Frameworks */,
+				F47FCAEB1F3CAC9E00D3D84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47FCAEF1F3CAC9E00D3D84C /* PBXTargetDependency */,
+			);
+			name = QuickChatUITests;
+			productName = QuickChatUITests;
+			productReference = F47FCAED1F3CAC9E00D3D84C /* QuickChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F47FCAC61F3CAC9E00D3D84C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hector Castillo";
+				TargetAttributes = {
+					F47FCACD1F3CAC9E00D3D84C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F47FCAE11F3CAC9E00D3D84C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F47FCACD1F3CAC9E00D3D84C;
+					};
+					F47FCAEC1F3CAC9E00D3D84C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F47FCACD1F3CAC9E00D3D84C;
+					};
+				};
+			};
+			buildConfigurationList = F47FCAC91F3CAC9E00D3D84C /* Build configuration list for PBXProject "QuickChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F47FCAC51F3CAC9E00D3D84C;
+			productRefGroup = F47FCACF1F3CAC9E00D3D84C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47FCACD1F3CAC9E00D3D84C /* QuickChat */,
+				F47FCAE11F3CAC9E00D3D84C /* QuickChatTests */,
+				F47FCAEC1F3CAC9E00D3D84C /* QuickChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F47FCACC1F3CAC9E00D3D84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47FCADC1F3CAC9E00D3D84C /* LaunchScreen.storyboard in Resources */,
+				F47FCAD91F3CAC9E00D3D84C /* Assets.xcassets in Resources */,
+				F47FCAD71F3CAC9E00D3D84C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47FCAE01F3CAC9E00D3D84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47FCAEB1F3CAC9E00D3D84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F47FCACA1F3CAC9E00D3D84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47FCAD41F3CAC9E00D3D84C /* ViewController.swift in Sources */,
+				F47FCAD21F3CAC9E00D3D84C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47FCADE1F3CAC9E00D3D84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47FCAE71F3CAC9E00D3D84C /* QuickChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47FCAE91F3CAC9E00D3D84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47FCAF21F3CAC9E00D3D84C /* QuickChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F47FCAE41F3CAC9E00D3D84C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47FCACD1F3CAC9E00D3D84C /* QuickChat */;
+			targetProxy = F47FCAE31F3CAC9E00D3D84C /* PBXContainerItemProxy */;
+		};
+		F47FCAEF1F3CAC9E00D3D84C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47FCACD1F3CAC9E00D3D84C /* QuickChat */;
+			targetProxy = F47FCAEE1F3CAC9E00D3D84C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F47FCAD51F3CAC9E00D3D84C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47FCAD61F3CAC9E00D3D84C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F47FCADA1F3CAC9E00D3D84C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47FCADB1F3CAC9E00D3D84C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F47FCAF41F3CAC9E00D3D84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F47FCAF51F3CAC9E00D3D84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F47FCAF71F3CAC9E00D3D84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuickChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hector.codes.QuickChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F47FCAF81F3CAC9E00D3D84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuickChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hector.codes.QuickChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F47FCAFA1F3CAC9E00D3D84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuickChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hector.codes.QuickChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickChat.app/QuickChat";
+			};
+			name = Debug;
+		};
+		F47FCAFB1F3CAC9E00D3D84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuickChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hector.codes.QuickChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickChat.app/QuickChat";
+			};
+			name = Release;
+		};
+		F47FCAFD1F3CAC9E00D3D84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuickChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hector.codes.QuickChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuickChat;
+			};
+			name = Debug;
+		};
+		F47FCAFE1F3CAC9E00D3D84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = QuickChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hector.codes.QuickChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuickChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F47FCAC91F3CAC9E00D3D84C /* Build configuration list for PBXProject "QuickChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47FCAF41F3CAC9E00D3D84C /* Debug */,
+				F47FCAF51F3CAC9E00D3D84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47FCAF61F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47FCAF71F3CAC9E00D3D84C /* Debug */,
+				F47FCAF81F3CAC9E00D3D84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F47FCAF91F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47FCAFA1F3CAC9E00D3D84C /* Debug */,
+				F47FCAFB1F3CAC9E00D3D84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F47FCAFC1F3CAC9E00D3D84C /* Build configuration list for PBXNativeTarget "QuickChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47FCAFD1F3CAC9E00D3D84C /* Debug */,
+				F47FCAFE1F3CAC9E00D3D84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F47FCAC61F3CAC9E00D3D84C /* Project object */;
+}
