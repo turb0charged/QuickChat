@@ -127,6 +127,7 @@
                     <navigationItem key="navigationItem" id="S8l-cP-a1h"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="Oy6-38-I6e" id="wyC-0R-o1r"/>
+                        <outlet property="messageCollectionView" destination="jQT-Ez-2Tg" id="kqD-20-vNL"/>
                         <outlet property="messageTextField" destination="KDU-ph-a5s" id="3F7-BU-07W"/>
                     </connections>
                 </viewController>

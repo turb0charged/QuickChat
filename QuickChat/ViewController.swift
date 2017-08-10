@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
+    //MARK: - Properties
     @IBOutlet weak var messageTextField: UITextField!
     
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var messageCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    //MARK: - Keyboard functions
     func keyboardWillShow(notification: NSNotification) {
         //move view along with keyboard
         //TODO animate and scroll to bottom of collection view when this occurs
@@ -70,6 +73,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
     //MARK: - Actions
     @IBAction func messageTextFieldReturnTouched(_ sender: Any, forEvent event: UIEvent) {
         
