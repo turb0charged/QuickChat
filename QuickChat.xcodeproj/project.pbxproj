@@ -99,13 +99,13 @@
 		F47FCAD01F3CAC9E00D3D84C /* QuickChat */ = {
 			isa = PBXGroup;
 			children = (
+				F47FCB011F3CD04200D3D84C /* Extensions */,
 				F47FCAD11F3CAC9E00D3D84C /* AppDelegate.swift */,
 				F47FCAD31F3CAC9E00D3D84C /* ViewController.swift */,
 				F47FCAD51F3CAC9E00D3D84C /* Main.storyboard */,
 				F47FCAD81F3CAC9E00D3D84C /* Assets.xcassets */,
 				F47FCADA1F3CAC9E00D3D84C /* LaunchScreen.storyboard */,
 				F47FCADD1F3CAC9E00D3D84C /* Info.plist */,
-				F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */,
 			);
 			path = QuickChat;
 			sourceTree = "<group>";
@@ -126,6 +126,14 @@
 				F47FCAF31F3CAC9E00D3D84C /* Info.plist */,
 			);
 			path = QuickChatUITests;
+			sourceTree = "<group>";
+		};
+		F47FCB011F3CD04200D3D84C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F47FCAFF1F3CCCE500D3D84C /* UIImageExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
