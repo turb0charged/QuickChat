@@ -14,6 +14,7 @@ final class ChatMessage:  ListDiffable{
     let messageText : String?
     let messageType: MessageType
     let messageTimeStamp: Date
+    var isNew: Bool = true
     
     init(primaryKey: Int, messageType: MessageType, messageText: String?, messageTimeStamp: Date) {
         self.primaryKey = primaryKey

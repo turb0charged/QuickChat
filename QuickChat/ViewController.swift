@@ -17,18 +17,18 @@ class ViewController: UIViewController, UITextFieldDelegate, ListAdapterDataSour
     
     @IBOutlet weak var messageCollectionView: UICollectionView!
     
+
     lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
     var counter: Int = 0
+    
     var messages : [ChatMessage] = [] /*[ChatMessage.init(primaryKey: 1, messageType: .UserMessage, messageText: [] "Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.", messageTimeStamp: Date())]*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         messageTextField.delegate = self
-//        let flowLayout = ChatFlowLayout()
-//        messageCollectionView.setCollectionViewLayout(flowLayout, animated: true)
         adapter.collectionView = messageCollectionView
         adapter.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
@@ -82,13 +82,11 @@ class ViewController: UIViewController, UITextFieldDelegate, ListAdapterDataSour
         if let userInfo = notification.userInfo {
             if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
                 bottomConstraint.constant = keyboardSize.height
-//                let lastSectionIndex = (messageCollectionView?.numberOfSections)! - 1
-//                guard let lastItemIndex = (messageCollectionView?.numberOfItems(inSection: lastSectionIndex))! - 1 else {}
-//                {
-//                let indexPath = IndexPath(item: lastItemIndex, section: lastSectionIndex)
-//                messageCollectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
-//                }
-                
+                //TODO fix scrolling to complete bottom
+                if(messages.count > 0){
+                    let indexPath = IndexPath(item: 0, section: messages.count-1)
+                    messageCollectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
+                }
             }
             
         }
@@ -101,13 +99,14 @@ class ViewController: UIViewController, UITextFieldDelegate, ListAdapterDataSour
     
     //MARK: - UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
         counter+=1
         messages.append(ChatMessage.init(primaryKey: counter, messageType: .UserMessage, messageText: textField.text, messageTimeStamp: Date()))
         counter+=1
         messages.append(ChatMessage.init(primaryKey: counter, messageType: .ResponseMessage, messageText: textField.text, messageTimeStamp: Date()))
         textField.text = ""
         adapter.performUpdates(animated: true)
+        
+        /*TODO add scrolling to the bottom of the collectionview while you are chatting with keyboard visible*/
         return true
     }
     

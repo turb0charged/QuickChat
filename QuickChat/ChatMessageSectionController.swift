@@ -39,7 +39,10 @@ final class ChatMessageSectionController : ListBindingSectionController<ListDiff
             }
             manualCell.text = text
             manualCell.setSentMessageCell()
-            manualCell.animate(completion: nil)
+            if(message.isNew){
+                manualCell.animate(completion: {self.message.isNew = false})
+            }
+            
             cell = manualCell
             
         case .ResponseMessage:
@@ -48,7 +51,9 @@ final class ChatMessageSectionController : ListBindingSectionController<ListDiff
             }
             manualCell.text = text
             manualCell.setReceivedMessageCell()
-            manualCell.animate(completion: nil)
+            if(message.isNew){
+                manualCell.animate(completion: {self.message.isNew = false})
+            }
             cell = manualCell
         }
         return cell
