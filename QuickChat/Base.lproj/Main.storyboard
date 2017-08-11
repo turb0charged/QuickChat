@@ -38,7 +38,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYu-61-SOJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYu-61-SOJ" userLabel="TextFieldViewHolder">
                                 <rect key="frame" x="0.0" y="621" width="375" height="46"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBD-mE-POs" userLabel="CameraButton">
@@ -92,48 +92,65 @@
                                     <constraint firstItem="KDU-ph-a5s" firstAttribute="leading" secondItem="VBD-mE-POs" secondAttribute="trailing" constant="8" id="uvv-8y-az7"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MessageCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jQT-Ez-2Tg">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZkZ-a8-aJb">
                                 <rect key="frame" x="16" y="72" width="343" height="541"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cyH-ec-LMr">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jBf-lj-eTq">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hSE-pz-sHb">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="messageCell" id="Zzj-eH-7nW" customClass="MessageCell" customModule="QuickChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr5-uT-Ser">
+                                                    <rect key="frame" x="4" y="15" width="42" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="pr5-uT-Ser" firstAttribute="leading" secondItem="Zzj-eH-7nW" secondAttribute="leading" constant="4" id="B2o-Ba-OqC"/>
+                                            <constraint firstAttribute="trailing" secondItem="pr5-uT-Ser" secondAttribute="trailing" constant="4" id="O5z-Ex-VEs"/>
+                                            <constraint firstAttribute="bottom" secondItem="pr5-uT-Ser" secondAttribute="bottom" constant="15" id="Z4p-kS-1LK"/>
+                                            <constraint firstItem="pr5-uT-Ser" firstAttribute="top" secondItem="Zzj-eH-7nW" secondAttribute="top" constant="15" id="hqJ-fE-Raz"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="pr5-uT-Ser" id="lnV-YR-LcT"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jQT-Ez-2Tg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="64W-ci-Cvt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZkZ-a8-aJb" secondAttribute="trailing" id="043-OV-hZZ"/>
+                            <constraint firstItem="ZkZ-a8-aJb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HQN-Jh-WlW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EYu-61-SOJ" secondAttribute="bottom" id="Oy6-38-I6e"/>
+                            <constraint firstItem="EYu-61-SOJ" firstAttribute="top" secondItem="ZkZ-a8-aJb" secondAttribute="bottom" constant="8" id="TSG-US-kxa"/>
                             <constraint firstAttribute="trailing" secondItem="EYu-61-SOJ" secondAttribute="trailing" id="URp-zd-D0s"/>
                             <constraint firstItem="EYu-61-SOJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bce-qp-clb"/>
-                            <constraint firstItem="jQT-Ez-2Tg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="chl-yj-o8U"/>
-                            <constraint firstItem="EYu-61-SOJ" firstAttribute="top" secondItem="jQT-Ez-2Tg" secondAttribute="bottom" constant="8" id="k45-KH-kgy"/>
-                            <constraint firstItem="jQT-Ez-2Tg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qR8-a8-M43"/>
+                            <constraint firstItem="ZkZ-a8-aJb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ryE-ih-w55"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="S8l-cP-a1h"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="Oy6-38-I6e" id="wyC-0R-o1r"/>
-                        <outlet property="messageCollectionView" destination="jQT-Ez-2Tg" id="kqD-20-vNL"/>
+                        <outlet property="messageCollectionView" destination="ZkZ-a8-aJb" id="vfi-e0-E4h"/>
                         <outlet property="messageTextField" destination="KDU-ph-a5s" id="3F7-BU-07W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-478" y="47"/>
+            <point key="canvasLocation" x="-479.19999999999999" y="46.326836581709152"/>
         </scene>
     </scenes>
     <resources>

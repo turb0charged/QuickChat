@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.messageTextFieldReturnTouched(Any, forEvent : UIEvent) -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ChatMessageSectionController.sizeForItem(at : Int) -&gt; CGSize:ChatMessageSectionController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static TextSize.size(String, font : UIFont, width : CGFloat, insets : UIEdgeInsets) -&gt; CGRect:TextSizeUtil.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ChatFlowLayout.initialLayoutAttributesForAppearingItem(at : IndexPath) -&gt; UICollectionViewLayoutAttributes?:ChatFlowLayout.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionView?.cellForItem(at: itemIndexPath)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChatMessageSectionController.cellForItem(at : Int) -&gt; UICollectionViewCell:ChatMessageSectionController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ChatMessageSectionController.didUpdate(to : Any) -&gt; ():ChatMessageSectionController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
