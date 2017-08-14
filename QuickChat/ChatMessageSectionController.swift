@@ -62,4 +62,5 @@ final class ChatMessageSectionController : ListBindingSectionController<ListDiff
     override func didUpdate(to object: Any) {
         self.message = (object as? ChatMessage)!
     }
+    
 }

@@ -28,9 +28,32 @@ class QuickChatUITests: XCTestCase {
         super.tearDown()
     }
     
+    
+    
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        let element = app.otherElements.containing(.navigationBar, identifier:"CHAT WITH US").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField = element.children(matching: .other).element.children(matching: .textField).element
+        let collectionViewsQuery = app.collectionViews
+        let cell = collectionViewsQuery.children(matching: .cell).element(boundBy: 2)
+        let collectionView = element.children(matching: .collectionView).element
+        textField.tap()
+        textField.typeText("test1\r")
+        cell.staticTexts["test1"].exists
+        textField.typeText("test2\r")
+        textField.typeText("test3\r")
+        textField.typeText("test this long string that")
+        app.typeText(" will surely wrap and cause some issues\r")
+        app.typeText("test3\r")
+        
+        
+        collectionView.swipeUp()
+        
+        collectionView.swipeDown()
+        collectionView.swipeDown()
+        collectionView.swipeUp()
     }
     
 }

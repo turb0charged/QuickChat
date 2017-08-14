@@ -80,10 +80,19 @@ class ReceivedMessageCell: UICollectionViewCell {
         layoutAttributes.frame = newFrame
         return layoutAttributes
     }
+    override func prepareForReuse() {
+        for layer in self.contentView.layer.sublayers! {
+            if(layer is CAShapeLayer){
+                layer.removeFromSuperlayer()
+            }
+        }
+        self.label.layer.mask?.removeFromSuperlayer()
+        self.contentView.layer.mask?.removeFromSuperlayer()
+    }
     
     func setReceivedMessageCell()  {
         
-        let path = UIBezierPath(roundedRect: self.contentView.frame, byRoundingCorners: [.topLeft, .topRight,.bottomRight], cornerRadii: CGSize(width: 20, height: 20))
+        let path = UIBezierPath(roundedRect: self.contentView.bounds, byRoundingCorners: [.topLeft, .topRight,.bottomRight], cornerRadii: CGSize(width: 20, height: 20))
         let maskLayer = CAShapeLayer()
         maskLayer.path = path.cgPath
         maskLayer.fillColor = UIColor.clear.cgColor

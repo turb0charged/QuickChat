@@ -85,10 +85,18 @@ class ChatMessageCell: UICollectionViewCell {
         layoutAttributes.frame = newFrame
         return layoutAttributes
     }
-    
+    override func prepareForReuse() {
+        for layer in self.contentView.layer.sublayers! {
+            if(layer is CAShapeLayer){
+                layer.removeFromSuperlayer()
+            }
+        }
+        self.label.layer.mask?.removeFromSuperlayer()
+        self.contentView.layer.mask?.removeFromSuperlayer()
+    }
     
     func setSentMessageCell() {
-
+        
         self.label.backgroundColor = UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
         self.contentView.backgroundColor = UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
         

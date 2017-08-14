@@ -29,6 +29,7 @@ class ChatFlowLayout: UICollectionViewFlowLayout{
         
         insertingIndexPaths.removeAll()
     }
+    
     override func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let attributes = super.initialLayoutAttributesForAppearingItem(at: itemIndexPath)
         
